@@ -1,0 +1,3 @@
+- 👋 Hi, I’m @DUCKEY19
+- 👀 I’m interested in making games and software.
+- 🌱 I’m currently learning how to make applications.
