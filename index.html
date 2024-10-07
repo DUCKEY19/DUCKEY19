@@ -3,43 +3,84 @@
 
 <style>
     body {
-        background-color: #c9ae95;
-        font-family: Garamond, serif;
+        background-color: #3A301C;
+        font-family: Inter, sans-serif;
+        font-feature-settings: 'liga' 1, 'calt' 1;
     }
 
     .heading {
         text-align: center;
-        text-color: dark-green;
+        color: #EDEEEC;
         padding: 10px;
+    }
+
+    .text{
+        color: #EDEEEC;
+        text-wrap: pretty;
+        padding: 5%;
     }
 
     .image {
         padding: 7%;
+        margin-left: auto; 
+        margin-right: auto; 
+        border-radius: 75px;
+        width: 40%;
     }
 
     .imagediv {
-        display: inline;
+        display: grid;
+        align-items: center; 
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2%;
+    }
+
+    .githubbutton{
+        padding: 10px; 
+        cursor: pointer; 
+        color: #EDEEEC; 
+        border: 5px solid #96896E;
+        background: #68717F;
+    }
+
+
+    @media screen and (max-width:500px) {
+
+        .imagediv {
+            display: inline;
+            text-align: center;
+        }
+
+        .image {
+            width: 70%;
+            border-radius: 50px;    
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+
+        .text {
+            padding-bottom: 15%;
+        }
+
     }
 </style>
 
 <head>
     <title>ethan c</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 </head>
 
 <body>
 
-    <h1 class="heading">Welcome to Ethan C's website</h1>
+    <h1 class="heading">Hi, I'm  Ethan C</h1>
     <div class="imagediv">
-        <img src="mountainbike1.jpeg" alt="mountainbike" width="35%" class="image"
-            style="float:left; margin-left: auto; margin-right: auto;">
-        <img src="mountainbike2.jpeg" alt="mountainbike" width="35%" class="image"
-            style="float:right; margin-left: auto; margin-right: auto;">
+        <img src="chickensandwich.JPG" alt="testing" class="image">
+        <p class="text">This is sample text for the image on the left hand side. In this case it is a chicken sandwich. This is some more information about the chicken sandwich so that the text will wrap so I can test it if it looks nice.</p>
     </div>
     <p style="text-align: center;">
-        <a href="https://www.github.com/duckey19"
-            style="padding: 10px; margin-left: auto; margin-right: auto; cursor: pointer; color: black; border: 5px solid #ccc;background: #586da7;">github
-            profile</a>
+        <a href="https://www.github.com/duckey19" class="githubbutton">github profile</a>
     </p>
 
 </body>
